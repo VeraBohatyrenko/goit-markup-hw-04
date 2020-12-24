@@ -171,6 +171,17 @@ img {
   background-position: center;
 }
 
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 .button {
   font-family: var(--primary-text-color);
   width: 200px;
@@ -208,6 +219,47 @@ img {
 
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon-antena::before {
+  background-image: url("../images/icons/icons-features/antenna.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-clock::before{
+  background-image: url("../images/icons/icons-features/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-diagram::before{
+  background-image: url("../images/icons/icons-features/diagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-astronaut::before{
+  background-image: url("../images/icons/icons-features/astronaut.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features-icons-item {
+  display: block;
+  width: 65px;
+  height: 70px;
+  padding: 0;
+  border: none;
 }
 
 .features-title-item {
