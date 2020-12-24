@@ -155,22 +155,24 @@ img {
 /* Hero (Герой) */
 
 .hero {
-  background-color: var(--secondary-black-color);
+  background: #C4C4C4;
   text-align: center;
   padding: 200px 0;
 }
 
-.hero-title {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  text-transform: uppercase;
+.hero-overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/Img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .button {
+  font-family: var(--primary-text-color);
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -195,8 +197,9 @@ img {
 }
 
 .features-list {
-  list-style: none;
   display: flex;
+  list-style: none;
+  
 }
 
 .features-item {
