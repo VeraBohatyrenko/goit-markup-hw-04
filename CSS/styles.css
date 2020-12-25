@@ -315,6 +315,10 @@ img {
   display: flex;
 }
 
+.info-worker {
+  padding: 30px 32px;
+}
+
 .team-item {
   width: calc((100% - 90px) / 4);
   background: #ffffff;
@@ -338,7 +342,6 @@ img {
 }
 
 .photo-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -349,7 +352,7 @@ img {
 }
 
 .photo-text {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -364,6 +367,52 @@ img {
 
 .section-team {
   background-color: #f5f4fa;
+}
+
+/* Социальные сети */
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  justify-content: center;
+}
+
+.socials-item {
+  width: calc((100% - 30px) / 4);
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  background: #FFFFFF;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+  
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background: #2196F3; 
+}
+
+.socials-icon {
+  fill: #afb1b8;
+}
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--primary-white-color);
 }
 
 /* footer (Подвал) */
