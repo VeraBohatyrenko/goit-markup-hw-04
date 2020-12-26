@@ -36,6 +36,8 @@ body {
 a {
   text-decoration: none;
   color: var(--secondary-text-color);
+  margin: 0;
+  padding: 0;
 }
 
 address {
@@ -112,7 +114,7 @@ img {
 }
 
 .nav-list.menu {
-  margin-right: 332px;
+  margin-right: 305px;
 }
 
 .nav-list {
@@ -151,6 +153,34 @@ img {
 .nav-list .link.current {
   color: var(--accent-color);
 }
+
+.link-mail,
+.link-phone {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mail-phone {
+  margin-right: 30px;
+}
+
+.icon-mail {
+ margin-right: 10px; 
+}
+
+.icon-phone {
+  margin-right: 10px; 
+ }
+
+ .link-mail:hover .icon-mail,
+ .link-mail:focus .icon-mail {
+   fill: var(--accent-color);
+ }
+
+ .link-phone:hover .icon-phone,
+ .link-phone:focus .icon-phone {
+   fill: var(--accent-color);
+ }
 
 /* Hero (Герой) */
 
@@ -415,12 +445,60 @@ img {
   fill: var(--primary-white-color);
 }
 
+/* Постоянные клиенты */
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-logo {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  /* display: inline-block; */
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-logo:hover .logo-icon,
+.clients-logo:focus .logo-icon {
+  fill: var(--accent-color);
+}
+
+.clients-logo:hover,
+.clients-logo:focus {
+  border-color: var(--accent-color);
+}
+
+
+.logo-icon {
+  fill: #afb1b8
+}
+
 /* footer (Подвал) */
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-black-color);
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer-logo {
@@ -453,6 +531,53 @@ img {
   display: inline-block;
   margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-socials {
+  margin-left: 70px;
+}
+
+.footer-title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.socials-list-footer {
+  display: flex;
+  justify-content: center;
+}
+  
+.socials-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+  background: #2196F3; 
+}
+
+.socials-icon-footer {
+  fill: var(--primary-white-color);
+}
+
+
+.socials-item-footer:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Portfolio */
@@ -517,6 +642,15 @@ img {
 
 .portfolio-list-item:nth-child(-n + 6) {
   margin-bottom: 30px;
+}
+
+.portfolio-link-item {
+  display: block;
+}
+
+.portfolio-link-item:hover,
+.portfolio-link-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card-name {
